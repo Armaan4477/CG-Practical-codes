@@ -20,10 +20,9 @@ void main()
 	dy=y2-y1;
 	m=dy/dx;
 	if(m<1)
-	{
+	{       p=(2*dy)-dx;
 		for(i=1;i<=dx;i++)
 		{
-			p=(2*dy)-dx;
 			if(p<0)
 			{
 				putpixel(x++,y,RED);
@@ -37,10 +36,9 @@ void main()
 		}
 	}
 	else
-	{
+	{       p=(2*dx)-dy;
 		for(i=1;i<=dy;i++)
 		{
-			p=(2*dx)-dy;
 			if(p<0)
 			{
 				putpixel(x,y--,RED);
