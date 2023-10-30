@@ -26,6 +26,7 @@ void main()
 	putpixel(x,y,RED);
 	i=0;
 	
+	
 
 while(i<steps)
 	{
