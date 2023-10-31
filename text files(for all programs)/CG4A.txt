@@ -1,6 +1,19 @@
 #include<stdio.h>
 #include<conio.h>
 #include<graphics.h>
+void floodf(int x,int y,int old,int newc)
+{
+int current;
+current=getpixel(x,y);
+if(current==old)
+{
+putpixel(x,y,newc);
+floodf(x+1,y,old,newc);
+floodf(x-1,y,old,newc);
+floodf(x,y+1,old,newc);
+floodf(x,y-1,old,newc);
+}
+}
 void main()
 {
 	int gd=DETECT,gm;
@@ -10,11 +23,9 @@ void main()
 	scanf("%d %d",&x,&y);
 	printf("enter the radius of the circle:-");
 	scanf("%d",&r);
-
-	setcolor(BLUE);
 	circle(x,y,r);
-	setfillstyle(SOLID_FILL,WHITE);
-	floodfill(x,y,BLUE);
+	floodf(x,y,0,15);
+
 
 	getch();
 	closegraph();
