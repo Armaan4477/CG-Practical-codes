@@ -1,4 +1,7 @@
-## CG-External-Practical-codes
+## CG-External-Practical-codes 
+
+All codes are in c language.
+
 
 Exp 1-a : DDA Line Drawing Algorithm
 
