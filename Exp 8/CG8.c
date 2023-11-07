@@ -89,7 +89,7 @@ yy1 = y1 + t1 * p[3];
 yy2 = y1 + t2 * p[3];
 line(xx1,yy1,xx2,yy2);
 }
-printf("Name: (Naam daal idhar code mai)\nBranch: Computers\nDivision/Batch: A/A1,2,3\nRoll Number: 69");
+printf("Name: Armaan\nBranch: Computers\nDivision/Batch: B\nRoll Number: 69");
 delay(5000);
 getch();
 closegraph();
