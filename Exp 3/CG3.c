@@ -7,7 +7,7 @@ void main(){
       int gd=DETECT,gm;
       clrscr();
 
-    initgraph(&gd,&gm,"C:\TURBOC3\BGI");//initializing graph
+    initgraph(&gd,&gm,"C:\\TURBOC3\\BGI");//initializing graph
     printf("\033[0;37m");//changing text color
     setbkcolor(WHITE);//changing background color
     printf("\n\n Enter coordinate xc and yc = ");//taking center coordinates
